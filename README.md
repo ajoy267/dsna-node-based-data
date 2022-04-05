@@ -1,1 +1,0 @@
-# dsna-node-based-data

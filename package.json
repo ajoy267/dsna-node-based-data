@@ -1,0 +1,23 @@
+{
+  "name": "node-based-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajoy267/dsna-node-based-data.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajoy267/dsna-node-based-data/issues"
+  },
+  "homepage": "https://github.com/ajoy267/dsna-node-based-data#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
