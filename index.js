@@ -42,3 +42,47 @@ root.add(nodeE);
 console.log(root.getList()); // 'A B C D E'
 // root.remove(1);
 console.log(root.getList()); // 'A C D E'
+
+//Problem 3 Binary Node
+class BinaryTreeNode {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+
+  add(node) {
+    //if node is greater than the original value we pass it to the right
+    if (node > this.value) {
+      //if this.right is null then well add the node to it
+      if (this.right === null) {
+        this.right = node;
+      }
+      // if this.right is not null then well rerun the add
+      else {
+        this.right.add(node);
+      }
+    }
+    //if node is smaller than the original value we pass it to the left
+    if (node < this.value) {
+      //if this.left is null then well add the node to it
+      if (this.left === null) {
+        this.left = node;
+      }
+      // if this.left is not null then well rerun the add
+      else {
+        this.left.add(node);
+      }
+    }
+  }
+}
+
+const B = new BinaryTreeNode("B");
+const A = new BinaryTreeNode("A");
+const C = new BinaryTreeNode("C");
+const D = new BinaryTreeNode("D");
+
+// B will be the root of the tree:
+B.add(A);
+B.add(D);
+B.add(C);
